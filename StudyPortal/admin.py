@@ -406,7 +406,7 @@ class CustomDashboardView(TemplateView):
 
     def get_context_data(self, **kwargs):
         ctx = super().get_context_data(**kwargs)
-        # You can add dynamic data here for dashboard cards, charts etc.
+        
         ctx["stats"] = {
             "users": User.objects.count(),
             "courses": Course.objects.count(),
