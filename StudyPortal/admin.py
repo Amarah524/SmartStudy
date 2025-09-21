@@ -420,7 +420,6 @@ class CustomDashboardView(TemplateView):
         return ctx
 
 
-# Register view under admin site root
 def get_custom_urls(admin_site):
     return [
         path(
