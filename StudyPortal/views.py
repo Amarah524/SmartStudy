@@ -1,3 +1,3 @@
-from django.http import HttpResponse
-def hello_feature1(request):
-    return HttpResponse("Hello from Feature 1 branch")
+from django.shortcuts import render
+def feature1_page(request):
+    return render(request, 'StudyPortal/feature.html')
